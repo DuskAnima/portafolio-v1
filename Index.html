@@ -24,8 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto" id="navbar-example">
                         <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tech">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about-tech">Sobre mí</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
@@ -56,6 +55,27 @@
             <p>Desarrollador con formación en Full Stack y automatización de QA testing. Me enfoco en el aprendizaje
                 autodidácta continuo, calidad del código y escalabilidad. Busco siempre aprender tecnologías
                 interesantes para crear software interesante.</p>
+            <br>
+            
+            <div class="more-about-me">
+                <button class="btn btn-outline-accent w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#moreAboutMe" aria-expanded="false" aria-controls="moreAboutMe">
+                    <span>Un poco más sobre mi</span>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                
+                <div class="collapse" id="moreAboutMe">
+                    <div class="card card-body mt-2 bg-transparent text-light border-light">
+                        <ul class="mb-0">
+                            <li>Apasionado por los videojuegos</li>
+                            <li>Devorador de libros</li>
+                            <li>Game dev en proceso de formación autodidácta</li>
+                            <li>Amante del arte y la filosofía</li>
+                            <li>Adicto al picante y al café</li>
+                            <li>Disfruto de entender las cosas a bajo nivel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
 <!-- SKILLS -->
@@ -177,47 +197,74 @@
 
 
         <!-- EDUCATION -->
-<section id="education" class="container">
-    <h2 class="section-title">Formación Académica</h2>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="education-card card h-100 border-light bg-transparent text-light">
-                <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="education-icon me-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-                                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
-                            </svg>
+    <section id="education" class="container">
+        <h2 class="section-title">Formación Académica</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="literature-card card h-100 border-light bg-transparent text-light">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="literature-icon me-3">
+                                <i class="bi bi-journal-code fs-2"></i>
+                            </div>
+                            <h4 class="card-title mb-0">Python Full-Stack | Talento Digital Bootcamp Edutecno</h4>
                         </div>
-                        <h4 class="card-title mb-0">Python Full-Stack | Talento Digital Bootcamp Edutecno</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-accent">2024 - 2025</span>
+                            <span class="text-muted">462 horas</span>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-accent">2024 - 2025</span>
-                        <span class="text-muted">462 horas</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="literature-card card h-100 border-light bg-transparent text-light">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="literature-icon me-3">
+                                <i class="bi bi-bug fs-2"></i>
+                            </div>
+                            <h4 class="card-title mb-0">QA Testing Automation | Talento Digital Bootcamp Kibernum Academy</h4>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-accent">2025 - 2025</span>
+                            <span class="badge bg-info">Cursando</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nueva tarjeta para Licenciatura en Literatura -->
+            <div class="col-md-12">
+                <div class="literature-card card h-100 border-light bg-transparent text-light">
+                    <div class="card-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="literature-icon me-3">
+                                        <i class="bi bi-journal-text fs-1"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title mb-1">Licenciatura en Literatura</h4>
+                                        <p class="text-literature mb-0">Universidad Finis Terrae</p>
+                                    </div>
+                                </div>
+                                <div class="decoration-line"></div>
+                                <p class="card-text">Estudio de las principales corrientes literarias, análisis textual y teoría crítica. Mención en edición de textos.</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <span class="badge bg-literature fs-6 mb-2">2017 - 2021</span>
+                                <p class="text-muted">4 años de formación</p>
+                                <div class="d-flex justify-content-md-end">
+                                    <span class="badge bg-dark me-2">Crítica literaria</span>
+                                    <span class="badge bg-dark me-2">Teoría literaria</span>
+                                    <span class="badge bg-dark">Edición de textos</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="education-card card h-100 border-light bg-transparent text-light">
-                <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="education-icon me-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                            </svg>
-                        </div>
-                        <h4 class="card-title mb-0">QA Testing Automation | Talento Digital Bootcamp Kibernum Academy</h4>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-accent">2025 - 2025</span>
-                        <span class="badge bg-info">Cursando</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
         <!-- CONTACT -->
