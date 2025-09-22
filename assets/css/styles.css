@@ -1,0 +1,234 @@
+/* =========================
+    Variables
+   ========================= */
+:root {
+    --bg-color: #020024;
+    --text-color: #E0E0E0;
+    --accent: #00c9a7;
+    --accent-dark: #00997a;
+    --input-bg: #A3D2CA;
+    --navbar-height: 80px;
+}
+
+/* =========================
+    Reset & Base
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* =========================
+    Skill card bg
+   ========================= */
+
+.skill-card {
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 100%;
+    transition: transform 0.3s ease;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 78%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* Imágenes de fondo específicas para cada categoría */
+.skill-card.programming {
+    background-image: url('../img/programming_icon.png');
+    background-size: 200%; /* Zoom inicial */
+    background-position: center;
+    transition: background-size 0.7s ease, transform 0.3s ease;
+    background-repeat: no-repeat;
+}
+
+.skill-card.frameworks {
+    background-image: url('../img/framework_icon.png');
+    background-size: 200%;
+    background-position: center;
+    transition: background-size 0.7s ease, transform 0.3s ease;
+    background-repeat: no-repeat;
+}
+
+.skill-card.testing {
+    background-image: url('../img/testing_icon.png');
+    background-size: 200%;
+    background-position: center;
+    transition: background-size 0.7s ease, transform 0.3s ease;
+    background-repeat: no-repeat;
+}
+
+.skill-card.tools {
+    background-image: url('../img/tools_icon.png');
+    background-size: 200%;
+    background-position: center;
+    transition: background-size 0.7s ease, transform 0.3s ease;
+    background-repeat: no-repeat;
+}
+
+/* Efecto hover para ajustar la imagen al contenedor */
+.skill-card:hover {
+    background-size: 60%; /* Ajuste perfecto al contenedor */
+    background-repeat: no-repeat;
+}
+/* =========================
+    Navbar
+   ========================= */
+.glass-nav {
+    background: rgba(20, 20, 40, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+.navbar .nav-link {
+    color: var(--text-color);
+    margin: 0 .4rem;
+    transition: color .2s;
+    border-radius: .4rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background: var(--accent);
+    color: #fff !important;
+}
+
+/* =========================
+    Hero Section
+   ========================= */
+.hero-section {
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.hero-section .accent {
+    color: var(--accent);
+}
+
+.hero-section .lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.social-media img {
+    width: 60px;
+    margin: 0 10px;
+    filter: invert(0.5);
+    transition: transform .2s, filter .2s;
+}
+
+.social-media img:hover {
+    transform: scale(1.5);
+    filter: none;
+}
+
+/* =========================
+    Sections
+   ========================= */
+section {
+    padding: 80px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+
+
+/* =========================
+    Projects
+   ========================= */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: .8rem;
+    padding: 15px;
+    text-align: center;
+    transition: transform .2s, box-shadow .2s;
+    cursor: default;
+}
+
+.project-card img {
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 201, 167, 0.3);
+}
+
+.project-card h4 {
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+/* =========================
+    Contact
+   ========================= */
+.custom-input {
+    background: var(--input-bg);
+    border: none;
+    border-radius: .4rem;
+    padding: .5rem;
+}
+
+.btn-accent {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: .6rem 1.2rem;
+}
+
+/* =========================
+    Responsive
+   ========================= */
+@media screen and (max-width: 767px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+
+    .social-media img {
+        width: 12vw;
+        margin: 0 5px;
+    }
+}

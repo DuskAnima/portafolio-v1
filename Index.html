@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristopher | Portafolio</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="base-bg">
+        <!-- NAVBAR -->
+        <header class="navbar navbar-expand-md sticky-top glass-nav">
+            <nav class="container-fluid">
+                <a class="navbar-brand fw-bold text-light" href="#intro">CJ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto" id="navbar-example">
+                        <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tech">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- INTRO -->
+        <section id="intro" class="hero-section">
+            <div class="hero-text text-center">
+                <h1>¡Hola, Soy <span class="accent">Cristopher</span>!</h1>
+                <p class="lead">Desarrollador Full Stack | QA Automation | Game Dev Autodidacta</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/cristopher-jaccard-7473b6347/?locale=es_ES"><img src="/assets/img/linkedIn.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/DuskAnima"><img src="/assets/img/GitHub.png"
+                            alt="Github"></a>
+                </div>
+            </div>
+        </section>
+
+<!-- ABOUT + SKILLS SIDE-BY-SIDE -->
+<section id="about-tech" class="container">
+    <div class="row g-4">
+        <!-- ABOUT / RESUMEN -->
+        <div class="col-lg-4">
+            <h2 class="section-title">Sobre mi</h2>
+            <p>Desarrollador con formación en Full Stack y automatización de QA testing. Me enfoco en el aprendizaje
+                autodidácta continuo, calidad del código y escalabilidad. Busco siempre aprender tecnologías
+                interesantes para crear software interesante.</p>
+        </div>
+
+<!-- SKILLS -->
+<div class="col-lg-8 border-start ps-4">
+    <h2 class="section-title">Habilidades Técnicas</h2>
+    <div class="row equal-height-cards g-4">  
+        <div class="col-md-6">
+            <div class="skill-card programming">
+                <div class="skill-card-content"> 
+                    <h3>Lenguajes</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                        <li>Dart</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="skill-card frameworks">
+                <div class="skill-card-content">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>Django</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="skill-card testing">
+                <div class="skill-card-content">
+                    <h3>Testing & QA</h3>
+                    <ul>
+                        <li>JUnit, TestNG, Hamcrest</li>
+                        <li>Postman, Newman, JMeter</li>
+                        <li>Selenium, Cucumber, Mockito</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="skill-card tools">
+                <div class="skill-card-content">
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li>Git, Linux</li>
+                        <li>Jira</li>
+                        <li>IntelliJ, VSCode</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="container">
+<section id="projects" class="container">
+    <h2 class="section-title">Proyectos Destacados</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+            <a href="https://heladosdecrema-cj.vercel.app/" class="project-card-link" target="_blank">
+                <div class="project-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5976/5976353.png" alt="Reservation Manager"
+                        class="img-fluid">
+                    <h4>Front End Demo Deploy (Web)</h4>
+                    <p>Web estática simple de prueba para hacer deply en Vercel</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="https://github.com/DuskAnima/automation_team_3/tree/main/Modulo%203/Actividad%20Modular/Evaluacion_Modular_3" class="project-card-link" target="_blank">
+                <div class="project-card">
+                    <img src="/assets/img/pngwing.com.png" alt="Reservation Manager"
+                        class="img-fluid">
+                    <h4>Reservation Manager (Github)</h4>
+                    <p>CRUD Java simple para gestionar reservas de canchas deportivas desarrollada con principios SOLID y TDD usando Junit 5.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="https://github.com/DuskAnima/automation_team_3/tree/main/modulo%204/Modulo04-ActividadModular-Equipo03/bancaficticia" class="project-card-link" target="_blank">
+                <div class="project-card">
+                    <img src="/assets/img/selenium-logo-png_seeklogo-394619.png" alt="Banca Ficticia"
+                        class="img-fluid">
+                    <h4>Pruebas Funcionales de Banca Ficticia (Github)</h4>
+                    <p>Testing E2E web automatizado usando Selenium con patrón POM. Contiene documentación</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="https://github.com/DuskAnima/project_turret" class="project-card-link" target="_blank">
+                <div class="project-card">
+                    <img src="/assets/img/godot.png"
+                        alt="Juegos Godot" class="img-fluid">
+                    <h4>Juegos 2D en Godot (Github)</h4>
+                    <p>Desarrollo de prototipo (en curso) de shooter on-rails, enfoque en mecánicas, performance y clean code.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="https://github.com/DuskAnima/PyPyFee" class="project-card-link" target="_blank">
+                <div class="project-card">
+                    <img src="/assets/img/pngaaa.com-619282.png"
+                        alt="Calculadora PayPal" class="img-fluid">
+                    <h4>Calculadora de tarifas PayPal</h4>
+                    <p>Desktop app simple para calcular cargos y comisiones usando Tkinter para crear la interfaz gráfica.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+        </section>
+
+
+        <!-- EDUCATION -->
+<section id="education" class="container">
+    <h2 class="section-title">Formación Académica</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="education-card card h-100 border-light bg-transparent text-light">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="education-icon me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title mb-0">Python Full-Stack | Talento Digital Bootcamp Edutecno</h4>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="badge bg-accent">2024 - 2025</span>
+                        <span class="text-muted">462 horas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="education-card card h-100 border-light bg-transparent text-light">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="education-icon me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title mb-0">QA Testing Automation | Talento Digital Bootcamp Kibernum Academy</h4>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="badge bg-accent">2025 - 2025</span>
+                        <span class="badge bg-info">Cursando</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="container">
+            <h2 class="section-title">Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control custom-input" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control custom-input" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control custom-input" id="mensaje" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-accent">Enviar</button>
+            </form>
+        </section>
+<hr>
+        <!-- FOOTER -->
+        <footer class="text-center">
+            <p>&copy; 2025 Cristopher</p>
+        </footer>
+    </div>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
